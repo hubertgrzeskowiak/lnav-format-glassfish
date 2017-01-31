@@ -12,7 +12,7 @@
     "level": {
       "critical": "SEVERE",
       "error": "ERROR",
-      "warning": "WARNING",
+      "warning": "WARN|WARNING",
       "debug": "DEBUG",
       "info": "INFO"
     }
