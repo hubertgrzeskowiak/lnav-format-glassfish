@@ -1,0 +1,20 @@
+{
+  "java_log": {
+    "regex": {
+      "custom1" : { "pattern": "^\\[(?<timestamp>\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{3}\\+\\d{4})\\] \\[.+\\] \\[(?<alert_level>\\w+)\\] \\[.*\\] \\[(?<component>.+)\\](?<body>.*)$"}
+    },
+    "sample": [
+      {
+        "line" : "[2017-01-31T11:21:54.389+0100] [Payara 4.1] [SEVERE] [] [org.glassfish.admingui] [tid: _ThreadID=43 _ThreadName=admin-listener(4)] [timeMillis: 1485858114389] [levelValue: 1000] [[ RestResponse.getResponse() gives FAILURE.  endpoint = 'https://localhost:4848/management/domain/_list-resources'; attrs = '{appname=foo, modulename=CurrentSoftwareVersion}']]"
+      }
+    ],
+    "multiline": "true",
+    "level": {
+      "critical": "SEVERE",
+      "error": "ERROR",
+      "warning": "WARNING",
+      "debug": "DEBUG",
+      "info": "INFO"
+    }
+  }
+}
